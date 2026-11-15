@@ -6,7 +6,7 @@ PRINTSCII turns PNG and JPG images into ASCII art in the browser. Every step run
 
 Drop an image into the app, tune the character grid and tone controls, then export the result as text or PNG. The preview updates locally as you adjust the settings.
 
-> Video showcase: add a short screen recording at `docs/showcase.mp4` after recording the app locally. GitHub renders that file directly from the repository when it is included in a release or linked from an issue.
+Watch the [10-second video showcase](docs/showcase.mp4) to see the sample image conversion, original/side-by-side preview, resolution tuning, and detail controls in action.
 
 ## Run it
 
