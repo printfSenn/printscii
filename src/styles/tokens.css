@@ -1,0 +1,12 @@
+:root {
+  --desk: #232849;
+  --paper: #f6f8f0;
+  --bar: #d7ebcf;
+  --white: #fdfefb;
+  --ink: #1c2252;
+  --ink-soft: #3b4377;
+  --mag: #d1235f;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "DejaVu Sans Mono", "Liberation Mono", monospace;
+  color-scheme: light;
+}

@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+html {
+  background: var(--desk);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font: 16px/1.5 var(--serif);
+}
+
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.skip {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: 30;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 8px 14px;
+}
+
+.skip:focus {
+  top: 12px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--mag);
+  outline-offset: 2px;
+}
+
+.form {
+  position: relative;
+  min-height: 100vh;
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 0 68px;
+  background: repeating-linear-gradient(to bottom, var(--paper) 0 44px, var(--bar) 44px 88px);
+}
+
+.edge {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 42px;
+  background-color: var(--paper);
+  background-image: radial-gradient(circle at 50% 50%, var(--desk) 0 6px, transparent 6.5px);
+  background-size: 100% 44px;
+  background-position: 0 22px;
+  background-repeat: repeat-y;
+}
+
+.edge-l {
+  left: 0;
+  border-right: 2px dotted var(--ink-soft);
+}
+
+.edge-r {
+  right: 0;
+  border-left: 2px dotted var(--ink-soft);
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px 48px;
+  padding: 32px 0 24px;
+  border-bottom: 3px dotted var(--ink);
+}
+
+.wordmark {
+  display: block;
+  flex: 0 1 min(100%, clamp(300px, 58%, 820px));
+  width: min(100%, clamp(300px, 58%, 820px));
+  height: auto;
+  overflow: visible;
+}
+
+.wm-block {
+  fill: var(--ink);
+}
+
+.wm-line {
+  fill: none;
+  stroke: var(--mag);
+  stroke-width: 2.4;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+}
+
+.tagline {
+  margin: 0;
+  max-width: 32ch;
+  font: italic 1.25rem / 1.4 var(--serif);
+}
+
+@media (max-width: 900px) {
+  .form {
+    padding: 0 38px;
+  }
+
+  .edge {
+    width: 26px;
+    background-image: radial-gradient(circle at 50% 50%, var(--desk) 0 4px, transparent 4.5px);
+  }
+}
